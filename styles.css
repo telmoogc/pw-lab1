@@ -1,0 +1,36 @@
+body {
+    background-color: #eaffd0;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, ul {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    color: black;
+    margin: 50px auto 0 auto;
+    font-size: 5.625rem;
+}
+
+
+
+.wide-img {
+    width: 70%;
+}
+
+.waterfall-img {
+    display: block;
+    margin: 5% auto;
+    width: 376px;
+    height: 429px;
+    
+}

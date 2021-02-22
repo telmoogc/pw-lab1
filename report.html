@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Report</h1>
+    <br>
+    <img class="wide-img" src="img/inspect.png" alt="">
+    <p>Nesta imagem conseguimos observar que:</p>
+    <ul>
+        <li>Foram realizados <strong>2 (dois)</strong> requests (a página e a imagem).</li>
+        <li>A resposta ao request pedido foi bem sucedida pois obtivemos <strong>Status: 200 OK</strong> tanto para o documento como para a imagem</li>
+        <li>No total foram descarregados <strong>48.3kB</strong>.</li>
+        <li>Temos um ficheiro do tipo <strong>Document</strong>.</li>
+        <li>Temos uma imagem do tipo <strong>png</strong> que é inicializada (chamada) no documento <strong>index.html</strong>.</li>
+        <li>A aprensentação da página ficou completa em <strong>551ms</strong>.</li>
+        <ol>
+            <img class="waterfall-img" src="img/inspect-waterfall.png" alt="">
+            <li>O request demorou <strong>0.57ms</strong></li>
+            <li>Esteve á espera para receber uma resposta durante <strong>72.11ms</strong></li>
+        </ol>
+    </ul>
+    <br>
+    <p>Depois de o click no hyperlink, fomos redirecionados para o moodle da Universidade</p>
+    <img class="wide-img"src="img/hyperlink-ficheiros-descarregados.PNG" alt="">
+    <p>E foram descarregados 2 ficheiros do tipo <strong>php</strong></p>
+    <img class="small-img" src="img/hyperlink-resposta.PNG" alt="">
+    <p>Em que obtivemos <strong>63</strong> microsegundos de request e <strong>149.72</strong> ms de espera</p>
+    <p>Já os tempos de descarga foram no total <strong>298</strong> ms.</p>
+    <br>
+    <p>Na preview consegui observar que um dos ficheiros falhou a carregar e o outro ficheiro foi carregado com sucesso, neste caso o login do moodle da Universidade</p>
+    <p>Nos headers consegui observar que o ficheiro que falhou a carregar tem 4 abas que podemos expandir sendo elas:</p>
+    <pl>
+        <li>General</li>
+        <li>Response Headers</li>
+        <li>Request Headers</li>
+        <li>Query String Parameters</li>
+    </ol>
+    <p>Já o ficheiro que foi carregado com sucesso consegui observar apenas as 3 primeiras abas da lista anterior</p>
+    <br>
+    <p>Já no Timing consegui observar as seguintes informações para o ficheiro que foi carregado com sucesso:</p>
+        <ul>
+            <li>Queue Start Time</li>
+            <li>Started at</li>
+            <li>Resource Scheduling</li>
+            <li>Connection start</li>
+                <ul>
+                    <li>Stalled</li>
+                </ul>
+            <li>Request/Response</li>
+        </ul>
+    <p>Já no ficheiro que não foi carregado consegui observar tudo o que mencionei anteriormente (com tempos diferentes) mas com a excessão que o "Connection Start" tinha mais subcomponentes</p>
+    <p>Connection Start</p>
+    <ul>
+        <li>Stalled</li>
+        <li>DNS Lookup</li>
+        <li>Initial connection</li>
+        <li>SSL</li>
+    </ul>
+</body>
+
+</html>
