@@ -10,9 +10,32 @@
 <body>
     <h1>Report</h1>
     <br>
-    <img class="wide-img" src="img/inspect.png" alt="">
-    <p>Nesta imagem conseguimos observar que:</p>
+    <h2>Conhecer a Internet</h2>
+
+
+    <img class="wide-xy-img" src="img/my-ip.png" alt="ip-location">
+    <p class="legenda">Figura 1.1 - Endereço IP computador</p>
+    <p>Infelizmente já não tenho dados móveis, então o IP com o Wi-Fi é exatamente o mesmo que o do PC</p>
+
+
+
+    <img class="wide-xy-img" src="img/heroku-ip.PNG" alt="herouku-ip">
+    <p class="legenda">Figura 1.2 - IP do site hospedado no Heroku</p>
+
+    
+
+    <img src="img/cmd-traceroute.PNG" alt="cmd-traceroute">
+    <p class="legenda">Figura 1.3 - Percurso</p>
+
+
+    <img class="wide-img" src="img/geotracer.PNG" alt="">
+    <p class="legenda">Figura 1.4 - Percurso</p>
+
+    <h2>Acesso via HTTP à minha página Web</h2>
     <ul>
+        <img class="wide-img" src="img/inspect.png" alt="">
+        <p class="legenda">Figura 2.1 - </p>
+        <p>Nesta imagem conseguimos observar que:</p>
         <li>Foram realizados <strong>2 (dois)</strong> requests (a página e a imagem).</li>
         <li>A resposta ao request pedido foi bem sucedida pois obtivemos <strong>Status: 200 OK</strong> tanto para o documento como para a imagem</li>
         <li>No total foram descarregados <strong>48.3kB</strong>.</li>
@@ -21,6 +44,7 @@
         <li>A aprensentação da página ficou completa em <strong>551ms</strong>.</li>
         <ol>
             <img class="waterfall-img" src="img/inspect-waterfall.png" alt="">
+            <p class="legenda">Figura 2.2 - </p>
             <li>O request demorou <strong>0.57ms</strong></li>
             <li>Esteve á espera para receber uma resposta durante <strong>72.11ms</strong></li>
         </ol>
@@ -28,20 +52,45 @@
     <br>
     <p>Depois de o click no hyperlink, fomos redirecionados para o moodle da Universidade</p>
     <img class="wide-img"src="img/hyperlink-ficheiros-descarregados.PNG" alt="">
+    <p class="legenda">Figura 2.3 - </p>
     <p>E foram descarregados 2 ficheiros do tipo <strong>php</strong></p>
     <img class="small-img" src="img/hyperlink-resposta.PNG" alt="">
+    <p class="legenda">Figura 2.4 - </p>
     <p>Em que obtivemos <strong>63</strong> microsegundos de request e <strong>149.72</strong> ms de espera</p>
     <p>Já os tempos de descarga foram no total <strong>298</strong> ms.</p>
     <br>
     <p>Na preview consegui observar que um dos ficheiros falhou a carregar e o outro ficheiro foi carregado com sucesso, neste caso o login do moodle da Universidade</p>
+    <img class="wide-img" src="img/preview-failed.PNG" alt="image-preview-failed">
+    <p class="legenda">Figura 2.5 - </p>
+    <img class="wide-img" src="img/preview-moodle-login.PNG" alt="image-preview-moodle-login">
+    <p class="legenda">Figura 2.6 - </p>
     <p>Nos headers consegui observar que o ficheiro que falhou a carregar tem 4 abas que podemos expandir sendo elas:</p>
-    <pl>
+    <ul>
         <li>General</li>
+        <img src="img/headers-failed.png" alt="headers-failed-General">
+        <p class="legenda">Figura 2.7.1 - </p>
         <li>Response Headers</li>
+        <img src="img/headers-failed2.png" alt="headers-failed-Response">
+        <p class="legenda">Figura 2.7.2 - </p>
         <li>Request Headers</li>
+        <img class="wide-img" src="img/headers-failed3.png" alt="headers-failed-Request">
+        <p class="legenda">Figura 2.7.3 - </p>
         <li>Query String Parameters</li>
-    </ol>
+        <img src="img/headers-failed4.png" alt="headers-failed-Query">
+        <p class="legenda">Figura 2.7.4 - </p>
+    </ul>
     <p>Já o ficheiro que foi carregado com sucesso consegui observar apenas as 3 primeiras abas da lista anterior</p>
+    <ul>
+        <li>General</li>
+        <img src="img/headers-moodle.png" alt="headers-moodle-General">
+        <p class="legenda">Figura 2.8.1 - </p>
+        <li>Response Headers</li>
+        <img src="img/headers-moodle2.png" alt="headers-moodle-Response">
+        <p class="legenda">Figura 2.8.2 - </p>
+        <li>Request Headers</li>
+        <img class="wide-img" src="img/headers-moodle3.png" alt="headers-moodle-Request">
+        <p class="legenda">Figura 2.8.3 - </p>
+    </ul>
     <br>
     <p>Já no Timing consegui observar as seguintes informações para o ficheiro que foi carregado com sucesso:</p>
         <ul>
@@ -54,6 +103,8 @@
                 </ul>
             <li>Request/Response</li>
         </ul>
+    <img class="wide-img" src="img/timing-moodle.PNG" alt="timing-moodle">
+    <p class="legenda">Figura 2.9 - </p>
     <p>Já no ficheiro que não foi carregado consegui observar tudo o que mencionei anteriormente (com tempos diferentes) mas com a excessão que o "Connection Start" tinha mais subcomponentes</p>
     <p>Connection Start</p>
     <ul>
@@ -62,6 +113,8 @@
         <li>Initial connection</li>
         <li>SSL</li>
     </ul>
+    <img class="wide-img" src="img/timing-failed.PNG" alt="timing-load-failed">
+    <p class="legenda">Figura 2.9.1 - </p>
 </body>
 
 </html>

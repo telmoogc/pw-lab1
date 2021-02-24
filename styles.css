@@ -21,11 +21,23 @@ h1 {
     font-size: 5.625rem;
 }
 
+h2{
+    font-family: 'Monserrat', cursive;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+}
 
+.wide-xy-img {
+    width: 650px;
+    height: 429px;
+}
 
 .wide-img {
     width: 70%;
 }
+
+
 
 .waterfall-img {
     display: block;
@@ -33,4 +45,9 @@ h1 {
     width: 376px;
     height: 429px;
     
+}
+
+.legenda {
+    text-align: center;
+    padding-bottom: 3%;
 }
