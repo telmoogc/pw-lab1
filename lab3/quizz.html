@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Telmo Costa">
+  <meta name="keywords" content="Amsterdão">
+  <meta name="description" content="Website sobre Amsterdão">
+  <title>Quizz</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body>
+  <section style="background-color: #9b5151">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+
+  <h1>Amsterdão</h1>
+  <img src="images/amsterdam.jpg" alt="amsterdam-img">
+  <br>
+  <p><a href="index.html">Introdução</a> <a href="local.html">Localização</a> <a href="multimedia.html">Multimédia</a> <a href="info.html">Informações</a> <b><a href="quizz.html">Quizz</a></b> <a href="comentarios.html">Comentários</a> <a href="../index.html">Home</a></p>
+  <h3>Quizz</h3>
+  <form class="text" method="post" action="mailto:telmo.98@hotmail.com">
+    <fieldset>
+      <legend>Identificação:</legend>
+      <p>Nome: <input type="text" name="Nome" placeholder="nome" maxlength="10" autofocus required></p>
+      <p>Apelido: <input type="text" name="apelido" placeholder="apelido" maxlength="10" required></p>
+      <p>E-mail: <input type="email" name="email" placeholder="email" required></p>
+    </fieldset>
+    <fieldset style = "margin-top: 10px">
+      <legend>Quizz sobre Amsterdam</legend>
+      <p>Onde fica Amsterdão?
+        <input size="10" type="text" autocomplete="on">
+      </p>
+      <p>Data de Nascimento:
+        <input type="date">
+     </p>
+      <p>Gostava de visitar <em>Amsterdão</em>? 
+        <br>
+        <input type="radio" name="question"> 
+        <label for="question">Sim</label>
+        <br>
+        <input type="radio" name="question"> 
+        <label for="question">Não</label>
+      </p>
+      <p>Que meios iria usar para se deslocar em <em>Amsterdão</em>? 
+        <br>
+        <input type="checkbox" name="pe">
+        <label for="pe">Andar a pé</label>
+        <br>
+        <input type="checkbox" name="bike">
+        <label for="bike">Andar de Bicicleta</label>
+        <br>
+        <input type="checkbox" name="uber">
+        <label for="uber">Andava de Uber</label>
+        <br>
+        <input type="checkbox" name="carro">
+        <label for="carro">Alugava um carro</label>
+      </p>
+      <p>Para si, qual a cor mais bonita numa Túlipa?
+        <input type="color" name="favcolor" value="#000">
+      </p>
+      <p>Quantas pessoas levaria consigo a Amsterdão?
+         <input type="number" name="clareza" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+         <output>0</output>
+      </p>
+      <p>Prentende visitar Amsterdão no espaço de quantos anos? 
+        <input type="range" name="visita" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output>
+      </p>
+    </fieldset>
+    <fieldset style = "margin-top: 10px">
+      <legend>Pontos de Interesse</legend>
+      <label for="edificios">O que visitaria no primeiro dia em Amesterdão?</label>
+      <select name="edificios" multiple>
+        <option value="anneF">Casa de Anne Frank</option>
+        <option value="heineken">Heineken Experience</option>
+        <option value="gogh">Museu Van Gogh</option>
+        <option value="coffeS">Barney's Coffeeshop</option>
+      </select>
+      <hr>
+      <label for="teto">Onde ficaria hospedado?</label>
+      <input list="tetos" name="teto">
+      <datalist id="tetos" multiple>
+        <option value="Hotel"></option>
+        <option value="Airbnb"></option>
+        <option value="Casa de Familiares"></option>
+      </datalist> 
+      <hr>
+      <form>
+        Amesterdão tem cerca de 160 canais, quantos visitaria? 
+        <input type="number" min="0" max="100" name="numero" value="0" oninput="nr.value = 160 - parseInt(numero.value)">
+        sobrariam-lhe: 
+        <output name="nr" for="numero">0</output> 
+        canais por visitar</label>
+      </form>
+      <hr>
+      <p>Depois de visualizar este Website, o que pode esperar de Amesterdão?</p>
+      <textarea placeholder="Escreva aqui" style="width: 450px; height: 140px;"></textarea>
+    </fieldset>
+    <input type="image" src="images/submit-img.png" name="submit">
+    <input type="submit" value="Enviar Quizz ☑️">
+  </form>
+  </body>
+  <footer style="background-color: #769fcd">
+    <svg width="1600" height="300">
+      <a href="index.html" fill="#9b5151">
+          <g transform="translate(100,100)"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:10; visibility:hidden"> Introdução
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 10 100" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+      
+      <a href="local.html">
+          <g transform="translate(100,100)" fill="#C5F3AE"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6; visibility:hidden"> Localização
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 200 150" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+  
+      <a href="multimedia.html" fill="#9b5151">
+          <g transform="translate(100,100)"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:7; visibility:hidden"> Multimédia
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 400 50" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+  
+      <a href="info.html">
+          <g transform="translate(100,100)" fill="#C5F3AE"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:4; visibility:hidden"> Informacão
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 600 150" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+  
+      <a href="quizz.html" >
+          <g transform="translate(100,100)" fill="#9b5151"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:5; visibility:hidden"> Quizz
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 800 50" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+          
+      <a href="comentarios.html" fill="#C5F3AE">
+          <g transform="translate(100,100)"> 
+            <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:5; visibility:hidden"> Comentários
+              <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+              <animateMotion path="M 0 0 L 1000 150" begin="1s" dur="5s" fill="freeze" />
+              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" /> 
+            </text> 
+          </g>
+      </a>
+  
+      <g id="bycicle2" >
+        <circle cx="50" cy="250" r="40" stroke="black" stroke-width="3" fill="#9D57F9" />
+                <circle cx="200" cy="250" r="40" stroke="black" stroke-width="3" fill="#CCAEF3" />
+                <polygon points="50,250 125,250 87,150" stroke="#F3F957" stroke-width="3" fill="transparent"/>
+                <line x1="125" y1="250" x2="65" y2="110.5" stroke="#F3F957" stroke-width="3" fill="transparent"/>
+                <line x1="50" y1="250" x2="125" y2="250" stroke="#F3F957" stroke-width="3"/>
+                <line x1="40" y1="110.5" x2="80" y2="110.5" stroke="#663300" stroke-width="3" fill="transparent"/>
+                <circle cx="125" cy="250" r="10" stroke="#F3F957" stroke-width="3" fill="transparent"/>
+                <line x1="125" y1="250" x2="170" y2="190" stroke="#F3F957" stroke-width="3" fill="transparent"/>
+                <line x1="200" y1="250" x2="127.5" y2="142.5" stroke="#F3F957" stroke-width="3" fill="transparent"/>
+                <line x1="120" y1="142.5" x2="135" y2="142.5" stroke="black" stroke-width="3" fill="transparent">
+      </g>
+      <animateTransform  xlink:href="#bycicle2" attributeName="transform" type="translate" values="0,10;1280"  dur="6s" fill="freeze"/> 
+    </svg>
+  </footer>
+</html>
