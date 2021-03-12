@@ -28,7 +28,7 @@
   <br>
   <p><a href="index.html">Introdução</a> <a href="local.html">Localização</a> <a href="multimedia.html">Multimédia</a> <a href="info.html">Informações</a> <b><a href="quizz.html">Quizz</a></b> <a href="comentarios.html">Comentários</a> <a href="../index.html">Home</a></p>
   <h3>Quizz</h3>
-  <form class="text" method="post" action="mailto:telmo.98@hotmail.com">
+  <form method="post" action="mailto:telmo.98@hotmail.com">
     <fieldset>
       <legend>Identificação:</legend>
       <p>Nome: <input type="text" name="Nome" placeholder="nome" maxlength="10" autofocus required></p>
@@ -77,7 +77,7 @@
         <output>5</output>
       </p>
     </fieldset>
-    <fieldset style = "margin-top: 10px">
+    <fieldset style="margin-top: 10px">
       <legend>Pontos de Interesse</legend>
       <label for="edificios">O que visitaria no primeiro dia em Amesterdão?</label>
       <select name="edificios" multiple>
@@ -95,13 +95,13 @@
         <option value="Casa de Familiares"></option>
       </datalist> 
       <hr>
-      <form>
+      <p>
         Amesterdão tem cerca de 160 canais, quantos visitaria? 
         <input type="number" min="0" max="100" name="numero" value="0" oninput="nr.value = 160 - parseInt(numero.value)">
         sobrariam-lhe: 
         <output name="nr" for="numero">0</output> 
         canais por visitar</label>
-      </form>
+      </p>
       <hr>
       <p>Depois de visualizar este Website, o que pode esperar de Amesterdão?</p>
       <textarea placeholder="Escreva aqui" style="width: 450px; height: 140px;"></textarea>
