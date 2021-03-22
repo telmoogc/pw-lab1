@@ -216,18 +216,21 @@ iframe[name*="terd"]{
     width: 200px;
     height: 126px;
     border: 5px solid #000;
-  }
-
-/*div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 100%;
-    padding: 2%;
 }
 
-div.fixed{
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 2%;
+    float: left;
+    left: 100%;
+}
+
+
+.fixed{
     background-attachment: fixed;
-}*/
+}
 
 
 /* Menu */
