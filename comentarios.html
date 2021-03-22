@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    
+
     <header>
       <hx class="title">Amsterdão</hx>
       <figure>
@@ -31,54 +31,65 @@
         <br>
       </nav>
     </header>
-
+    
     <main>
-
+      
       <section>
-        <hx id="tema">Introdução</hx>
+        <hx id="tema">Comentários</hx>
 
-        <p>A histórica cidade de Amsterdão oferece muitos eventos artísticos e culturais para além das suas lindas ruas e canais que criam um local adorável para se explorar a pé ou de bicicleta.</p>
-        <p>Senão tiver a sorte de apanhar um evento cultural ou artístico, não se preocupe que existem inúmeros pontos turisticos para visitar, como por exemplo <em>A casa de Anne Frank</em>, <em>Heineken Experience</em>, <em>Hortus Botanicus
-            Amsterdam</em>, entre muitos outros e fora as inúmeres pontes, edifícios, igrejas e praças que também merecem uma visita</p>
-        <p>Amsterdão também é conhecido pelo seu espirito liberal, então existem alguns cafés, mais conhecidos por <em>Coffe Shops</em> onde é autorizado o consumo de drogas leves e ainda existe uma indústria de <em>Sexo legalizado</em>. Na <em>Red Light
-            District</em> as ruelas estão lotadas de <em>Sex Shops</em>, bares onde decorrem espetáculos eróticos, cinemas eróticos e até um <em>Museu do Sexo</em></p>
-        <p>Pode ✈️ até à bonita 🏙️ de Amesterdão e poderá 🗺️ inúmeros 🏛️, tem também muitos 🎭, pode ir até às famosas ☕🛍️🌿 ou mesmo à rua 🟥🔞, pode também 🗺️ os canais e andar de 🚣‍♂️ Isto tudo será feito a 🦶🏽 ou de 🚲 pois é uma 🏙️ muito 🤏.</p>
-        <hr>
-        <p>Pode <strong>viajar</strong> até á bonita <strong>cidade</strong> de Amesterdão e <strong>visitar</strong> inúmeros <strong>museus</strong>, tem também muitos <strong>eventos culturais</strong>, pode ir até às famosas <strong>coffe
-            shops</strong> ou mesmo á rua <strong>vermelha</strong>, pode também <strong>visitar</strong> os canais e andar de <strong>barco</strong>. Isto tudo será feito a <strong>pé</strong> ou de <strong>bicicleta</strong> pois é uma
-          <strong>cidade</strong> muito <strong>pequena</strong>.</p>
-        <hr>
-        <ul>
-          <li>Na página <a href="index.html">Introdução</a> vai encontrar uma breve Introdução sobre os pontos turísticos mais conhecidos que pode encontrar em Amesterdão.</li>
-          <li>Na página <a href="local.html">Localização</a> pdoe esperar informações geológicas da cidade, e também ficar a conhecer um pouco da meteorologia da cidade. Encontrará também o mapa de Amesterdão.</li>
-          <li>Na página <a href="multimedia.html">Multimédia</a> encontrará fotograficas emblemáticas sobre Amesterdão e ainda um video de aprensentação sobre a cidade em si, e logo de seguida um pequeno poema.</li>
-          <li>Na página <a href="info.html">Informações</a> vai encontrar informações sobre: </li>
-          <ul>
-            <li>Demografia</li>
-            <li>Geografia</li>
-            <li>O site oficial de Amsterdam</li>
-          </ul>
-          <li>Na página <a href="quizz.html">Quizz</a> poderá esperar um pequeno quizz sobre Amesterdão.</li>
-          <li>Na página <a href="comentarios.html">Comentários</a> servirá como ajuda para melhorar o website com ideias suas.</li>
-          <li>Na página <a href="../index.html">Home</a> poderá encontrar mais trabalhos da minha autoria.</li>
-        </ul>
+        <form action="">
+          <fieldset>
+            <legend>Comentários</legend>
+            <br>
+            <Label for="clareza">Clareza</Label>
+              <input type="range" name="clareza" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+              <output>5</output>
+            <hr>
+            <Label>Rigor (erros ortográficos)</Label><br> 
+              <label for="rigor"><input type="radio" name="rigor">Nenhuns</label>
+              <label for="rigor"><input type="radio" name="rigor">Poucos</label>
+              <label for="rigor"><input type="radio" name="rigor">Alguns</label>
+              <label for="rigor"><input type="radio" name="rigor">Muitos</label>
+              <label for="rigor"><input type="radio" name="rigor">Impossivel de ler</label>
+            <hr>
+            <Label>Considera que este WebSite é preciso?</Label><br>
+              <label for="preciso"><input type="radio" name="preciso">Sim</label>
+              <label for="preciso"><input type="radio" name="preciso">Não</label>
+            <hr>
+            <Label>Quão profunda é a informação deste WebSite?</Label><br>
+              <label for="deep"><input type="radio" name="deep">Sim</label>
+              <label for="deep"><input type="radio" name="deep">Não</label>
+            <hr>
+            <Label>Considera que este WebSite é amplo?</Label><br>
+              <label for="amplo"><input type="radio" name="amplo">Sim</label>
+              <label for="amplo"><input type="radio" name="amplo">Não</label>
+            <hr>
+            <Label>O WebSite faz sentido num todo e não se contradiz? (lógica)</Label><br>
+            <label for="logica"><input type="radio" name="logica">Sim</label>
+            <label for="logica"><input type="radio" name="logica">Não</label>
+            <hr>
+            <Label>É um WebSite focado no importante e não trivial? (significância)</Label><br>
+              <label for="signi"><input type="radio" name="signi">Sim</label>
+              <label for="signi"><input type="radio" name="signi">Não</label>
+            <hr>
+            <Label>É um WebSite que se diferencia dos outros? (Criatividade e Originalidade)</Label><br>
+              <label for="dif"><input type="radio" name="dif">Sim</label>
+              <label for="dif"><input type="radio" name="dif">Não</label>
+            <hr>
+            <Label>Quais foram as páginas que achou mais interessantes/Importantes ?</Label><br>
+              <label for="pages"><input type="checkbox" name="pages">Introdução</label>
+              <label for="pages"><input type="checkbox" name="pages">Informações</label>
+              <label for="pages"><input type="checkbox" name="pages">Localização</label>
+              <label for="pages"><input type="checkbox" name="pages">Multimédia</label>
+            <hr>
+            <textarea name="opiniao" cols="70" rows="10" placeholder="São aceites e bem-vindos todos os comentários e opiniões!"></textarea><br>
+            <button type="submit">Enviar comentário ☑️</button>
+          </fieldset>
 
-        <svg width="300" height="254">
-          <image href="images/workcloud.jpeg">
-          </image>
-          <a href="index.html">
-            <polygon opacity="0" points="0,0 300,254 0,254 0,300" />
-          </a>
-          <a href="local.html">
-            <polygon opacity="0" points="116,73 203,163 211,158 132,66" />
-          </a>
-          <a href="info.html">
-            <polygon opacity="0" points="174,108 177,117 221,119 220,113" />
-          </a>
-          <a href="multimedia.html">
-            <polygon opacity="0" points="139,54 140,77 174,94 174,80" />
-          </a>
-        </svg>
+          <input type="hidden" id="opiniaoRelativaLab4" name="opiniaoRelativaLab4" value="Opinião Relativa ao Lab 4">
+        </form>
+
+
       </section>
 
       <section>
@@ -170,7 +181,6 @@
       <address>Telmo Costa, 22003398, Universidade Lusófona de Humanidades e Tecnologias, 2021</address>
     </footer>
   </body>
-
 
 
 </html>
